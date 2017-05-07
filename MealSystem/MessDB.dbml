@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MealSystemDB" Class="MessDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-UMFKM0N\SQLEXPRESS;Initial Catalog=MealSystemDB;Integrated Security=True" SettingsObjectName="MealSystem.Properties.Settings" SettingsPropertyName="MealSystemDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MemberInfo" Member="MemberInformations">
+    <Type Name="MemberInformation">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[First Name]" Member="First_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Last Name]" Member="Last_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Deposit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Due" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expense" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Pay money]" Member="Pay_money" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Current Balance]" Member="Current_Balance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MemberInformation_Meal" Member="Meals" ThisKey="Id" OtherKey="Id" Type="Meal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Manager" Member="Managers">
+    <Type Name="Manager">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Meal" Member="Meals">
+    <Type Name="Meal">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Total Meal]" Member="Total_Meal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[1]" Member="_1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[2]" Member="_2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[3]" Member="_3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[4]" Member="_4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[5]" Member="_5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[6]" Member="_6" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[7]" Member="_7" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[8]" Member="_8" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[9]" Member="_9" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[10]" Member="_10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[11]" Member="_11" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[12]" Member="_12" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[13]" Member="_13" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[14]" Member="_14" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[15]" Member="_15" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[16]" Member="_16" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[17]" Member="_17" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[18]" Member="_18" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[19]" Member="_19" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[20]" Member="_20" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[21]" Member="_21" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[22]" Member="_22" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[23]" Member="_23" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[24]" Member="_24" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[25]" Member="_25" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[26]" Member="_26" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[27]" Member="_27" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[28]" Member="_28" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[29]" Member="_29" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[30]" Member="_30" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MemberInformation_Meal" Member="MemberInformation" ThisKey="Id" OtherKey="Id" Type="MemberInformation" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

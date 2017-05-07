@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MessDB">
+  <DataContextMoniker Name="/MessDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="26e8d919-445f-42c7-8a75-b38c4ece6b8c" absoluteBounds="0.5, 0.5, 2, 3.1170068359375">
+      <DataClassMoniker Name="/MessDBDataContext/MemberInformation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22c53545-6992-42c8-b1ff-deeb8f6d382c" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="418d7c04-c6cd-4406-8841-a212a7d5f137" absoluteBounds="5.125, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/MessDBDataContext/Manager" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aaca84f1-67a4-403f-95bb-63d042fe1a2a" absoluteBounds="5.14, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c30eba7-87a8-4709-bb09-33d6fcbd4d29" absoluteBounds="2.875, 0.5, 2, 6.9630354817708326">
+      <DataClassMoniker Name="/MessDBDataContext/Meal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="991d0894-d3f1-495d-9c2a-94093c6b5fbe" absoluteBounds="2.8899999999999997, 0.96, 1.9700000000000002, 6.403035481770833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.05850341796875); (2.875 : 2.05850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MessDBDataContext/MemberInformation/MemberInformation_Meal" />
+      <nodes>
+        <classShapeMoniker Id="26e8d919-445f-42c7-8a75-b38c4ece6b8c" />
+        <classShapeMoniker Id="4c30eba7-87a8-4709-bb09-33d6fcbd4d29" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
